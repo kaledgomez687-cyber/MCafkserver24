@@ -2,10 +2,10 @@ const mineflayer = require('mineflayer');
 
 function createBot() {
     const bot = mineflayer.createBot({
-        host: 'Ya_teniamos_server.aternos.me:31562', // <--- REEMPLAZA ESTO POR LA IP DE TU SERVER
+        host: 'nibblefish.aternos.host:31562', // <--- REEMPLAZA ESTO POR LA IP DE TU SERVER
         port: 31562,                // Puerto predeterminado de Minecraft
         username: 'sisifo24_7',    // Nombre genérico del bot/NPC dentro del juego
-        version: false              // Autodetecta la versión exacta del servidor (1.8 a 1.21+)
+        version: false              // Autodetecta la versión exacta del servidor (1.8 a 1.26+)
     });
 
     bot.on('spawn', () => {
